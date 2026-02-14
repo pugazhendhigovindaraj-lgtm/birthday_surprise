@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Birthday Surprise 🎂</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="screen1" class="screen active">
+            <button class="btn" onclick="goTo(2)">Tap to Enter 💖
+
+            </button>
+        </div>
+
+        <div id="screen2" class="screen">
+            <div class="balloons">
+                <div class ="balloon b1">
+                    <span class="string"></span>
+                </div>
+                <div class ="balloon b2">
+                    <span class="string"></span>
+                </div>
+                <div class ="balloon b3">
+                    <span class="string"></span>
+                </div>
+                <div class ="balloon b4">
+                    <span class="string"></span>
+                </div>
+                <div class ="balloon b5">
+                    <span class="string"></span>
+                </div>
+        </div>
+
+        <div class="card">
+            <h1>Happy Birthday 🎉</h1>
+            <h2></h2>
+            <p>
+                Wishing you a many many more happy returns of the day ☺️,
+                may your day filled with happiness,laughter 💓,
+                may your dreams come true and 
+                have a great year ahead 😁
+            </p>
+            <p class="from">from mee</p>
+        </div>
+        <button class="btn" onclick="goTo(3)">Next -> </button>
+        </div>
+        <div id="screen3" class="screen">
+            <div class="cake-wrap">
+                <div class="cake">
+                    <div class="layer bottom"></div>
+                    <div class="layer middle"></div>
+                    <div class="layer top"></div>
+                    <div class="icing"></div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+            <h2>Make a wish ✨</h2>
+            <p>I hope this little made you smile 💝😇</p>
+        </div>
+        <script>
+            function goTo(n){
+                document.querySelectorAll('.screen').forEach(s=> s.classList.remove('active'));
+                document.getElementById('screen'+n).classList.add('active');
+            
+            }
+        </script>
+
+    </body>
+</html>
